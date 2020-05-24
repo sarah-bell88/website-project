@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 // Start of carousel code
 const track = document.querySelector('.carousel-track');
-const slides =Array.from(track.children);
+const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel-button--right');
 const prevButton = document.querySelector('.carousel-button--left');
 const dotsNav = document.querySelector('.carousel_nav');
@@ -92,11 +92,24 @@ dotsNav.addEventListener('click', e => {
 });
 
 // i want the slides to auto rotate after 5s
-/*function autoSlider = () => {
-    currentSlide = track.querySelector('.current-slide');
-    console.log(currentSlide)
-    currentIndex = slides.findIndex(slide => slide === nextSlide);
-    console.log(currentIndex);
+const autoSlider = () => {
+    const currentSlide = track.querySelector('.current-slide');
+    const currentIndex = slides.findIndex(slide => slide === currentSlide);
+    const currentDot = dotsNav.querySelector('.current-dot');
+
+    if (currentIndex === slides.length - 1){
+        targetIndex = 0;
+        targetSlide = slides[0];
+        targetDot = dots[0];
+    } else {
+        targetIndex = currentIndex + 1;
+        targetSlide = currentSlide.nextElementSibling;
+        targetDot = currentDot.nextElementSibling
+    }
+
+    moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+    hideShowArrows(slides, prevButton, nextButton, targetIndex);
 }
 
-autoSlider();*/
+setInterval(autoSlider, 5000);
