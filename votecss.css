@@ -4,14 +4,13 @@
     color: rgb(230, 230, 230);
     font-family: Montserrat, sans-serif;
     align-items: stretch;
-    width: 50%;
+    width: 400px;
     height: 50%;
     top: 15vh;
     margin: 0 auto;
     padding: 30px 30px 30px 30px;
     border-radius: 15px;
     -moz-border-radius: 15px;
-    z-index: -1;
 }
 .field {
 position: relative;

@@ -6,7 +6,7 @@
     //database connection
 
     $dbhost = 'oniddb.cws.oregonstate.edu';
-    $dbname = 'robin-select';
+    $dbname = 'bellsar-db';
     $dbuser = 'bellsar-db';
     $dbpass = 'CFmzSBN8s5dvCl5x';
 
@@ -14,7 +14,7 @@
     if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     } else {
-        $stmt = $conn->prepare("insert into vote(name, robin, comment)
+        $stmt = $conn->prepare("insert into robin-select(name, robin, comment)
         values(?,?,?)");
         $stmt->bind_param("sss", $name, $robin, $comment);
         $stmt->execute();
