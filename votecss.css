@@ -1,0 +1,25 @@
+.vote-container {
+    position: relative;
+    background: #302f2f;
+    color: rgb(230, 230, 230);
+    font-family: Montserrat, sans-serif;
+    align-items: stretch;
+    width: 50%;
+    height: 50%;
+    top: 15vh;
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    z-index: -1;
+}
+.field {
+position: relative;
+font-size: 24px;
+text-shadow: 1px 1px 2px rgb(180, 177, 177);
+}
+.send-form {
+    color: #262626;
+    font-size: 20px;
+    cursor: pointer;
+}

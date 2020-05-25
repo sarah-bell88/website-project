@@ -1,0 +1,96 @@
+.dick-container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: calc(100vh);
+    margin-top: 50px;
+    z-index: -1;
+}
+.dick--info {
+    background: #6dd3fc;
+    width: 45%;
+    font-family: Montserrat, serif;
+    text-align: justify;
+}
+.dick-bio {
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    display: block;
+    border-bottom: 4px solid rgba(255, 255, 255, 1);
+    border-right: 4px solid rgba(255, 255, 255, 1);
+}
+.dick-blurb {
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    display: block;
+    border-bottom: 4px solid rgba(255, 255, 255, 1);
+    border-right: 4px solid rgba(255, 255, 255, 1);
+}
+.dick-comics-list {
+    position: relative;
+    list-style: none;
+    display: inline;
+    padding: 10px 20px 10px 10px;
+    display: block;
+    border-bottom: 4px solid rgba(255, 255, 255, 1);
+    border-right: 4px solid rgba(255, 255, 255, 1);
+}
+.other-appearances {
+    position: relative;
+    list-style: none;
+    display: inline;
+    padding: 10px 20px 10px 10px;
+    display: block;
+    
+    border-right: 4px solid rgba(255, 255, 255, 1);
+}
+.dick-image {
+    /*bottom: 0px;*/
+    width: 55%;
+    top: 0;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 0 -100px;
+    overflow: hidden;
+    display: block;
+    border-left: 4px solid rgba(255, 255, 255, 1);
+}
+
+.dick-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+.fixed-img
+{
+    position: fixed;
+    left: 45%;
+    z-index: -1;
+}
+.info {
+    position: relative;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgb(34, 31, 228);
+}
+.comics {
+    position: relative;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgb(34, 31, 228);
+}
+.bio {
+    position: relative;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgb(34, 31, 228);
+}
+.other-media {
+    position: relative;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgb(34, 31, 228);
+}
+button.download-button {
+    color: #262626;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
